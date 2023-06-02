@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML TASK-8</title>
+        <style>
+            th{
+                width:200px;
+            }
+            table, td, th{
+                border:1px solid black;
+                border-collapse: collapse;
+            }
+            .box{
+                width:100%;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color:blue; text-align: center;">Registration form</h1>
+        <form style="width:500px; margin:auto">
+            <table style="width:600px">
+                <tr>
+                    <th>First Name</th>
+                    <td><input type="text" class="box" required/></td>
+                </tr>
+                <tr>
+                    <th>Last Name</th>
+                    <td><input type="text" class="box" required/></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><input type="email" class="box" required /></td>
+                </tr>
+                <tr>
+                    <th>Password</th>
+                    <td><input type="text" class="box" required/></td>
+                </tr>
+                <tr>
+                    <th>Re-enter Password</th>
+                    <td><input type="text" class="box" required /></td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="input-label"><label for="gender">Gender:</label></th>
+                    <td style="text-align: left;">
+                        <input type="radio" name="gender" id="male">
+                        <label  for="male">Male</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>    
+                <tr>
+                    <th>Age</th>
+                    <td><input type="text" class="box" required /></td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td><textarea class="box" required style="height:80px"></textarea></td>
+                </tr>
+                <tr>
+                    <th>State</th>
+                    <td><input type="text" class="box" required /></td>
+                </tr>
+                <tr>
+                    <th>Country</th>
+                    <td><select>
+                        <option>Choose your country</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <th>Languages known</th>
+                    <td>
+                        <input type="checkbox" value="English"/>English
+                        <input type="checkbox" value="Kannada"/>Kannada
+                        <input type="checkbox" value="Hindi"/>Hindi
+                        <input type="checkbox" value="Tamil"/>Tamil
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"> <input type="checkbox" value="declaration" checked/>Hereby I declare all the given details are true</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: right;">
+                        Log in to <a href="https://ethnus.com/">Ethnus</a> website
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <center><button type="submit">Register</button></center>
+        </form>
+    </body>
+</html>
